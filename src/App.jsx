@@ -1,6 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import { BrowserRouter as Route, Routes, HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { useSelector } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
@@ -25,7 +24,7 @@ function App() {
   return (
     <>
     <Provider store={store}>
-      <Router>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={authUser ? <Home /> : <Login />} />
@@ -38,7 +37,7 @@ function App() {
         </Routes>
         <Footer />
         <ToastContainer />
-      </Router>
+      </HashRouter>
     </Provider>
   </>
   )
