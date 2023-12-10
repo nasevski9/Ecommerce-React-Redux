@@ -3,6 +3,8 @@
 # Description
 Ecommerce website built with React and Redux using the fakestore API to fetch products. User needs to be logged in to be able to view the products and shop.
 
+Link to the website: https://nasevski9.github.io/Ecommerce-React-Redux/
+
 # Login page
 ![5](https://github.com/nasevski9/e-shop/assets/140076217/d71c1d75-817c-43da-8430-a6cc2d055322)
 
